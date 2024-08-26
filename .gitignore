@@ -1,0 +1,6 @@
+key.txt
+servers.txt
+reminders.json
+servers.json
+__pycache__/
+*.py[cod]
