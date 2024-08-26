@@ -166,22 +166,9 @@ class reminderCog(commands.Cog):
             '''
             if(await self.allowed(ctx)):
                 await ctx.respond('loading', ephemeral=True)
-                if(isinstance(first_message,str)):
-                    first_message = time_to_seconds(first_message)
-
-                if first_message == 0:
-                    first_message = time.time()
-                else:
-                    first_message = time.time() + first_message
-                
-                if(isinstance(time_between,str)):
-                    time_between = time_to_seconds(time_between)
-
-                if(time_between == 0):
-                    time_between = 604800
 
                 serv = await self.data_loader.get_server(str(ctx.guild.id))
-                rem = Reminder(serv, title, message, int(ctx.channel.id), int(time_between), int(first_message), bool(single_shot))
+                rem = Reminder(serv, title, message, int(ctx.channel.id), time_between, first_message, bool(single_shot))
                 
                 await self.data_loader.add_Reminder(rem)
 
