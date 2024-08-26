@@ -4,6 +4,8 @@ Currently some of the features crash out when given invalid keys, the bot still 
 
 If you want to use the bot and don't want the verify feature (it's very server specific), just comment out the line add_verify(bot, servers)
 in rob_ot.py
+You will also need to configure your user and admin roles, which is doable if you have one of the following roles:
+ ["admin", "owner", "Admin", "Owner"], or edit the servers.json file directly
 
 If you want to fork(or want me to think about adding specific features), let me know, I'd love to hear your thoughts on the bot
 
