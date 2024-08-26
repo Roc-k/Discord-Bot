@@ -94,9 +94,7 @@ class reminderCog(commands.Cog):
 
     def connect_reminders(self, bot:discord.bot):
         '''
-        Connects all reminder related slash commands to the bot, this uncludes
-        delete_reminder
-
+        Connects all reminder related slash commands to the bot
         '''
         guilds = self.data_loader.servers
 
