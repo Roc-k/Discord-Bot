@@ -69,8 +69,6 @@ class ReminderDataLoader():
                 self.reminderDict[server] is None
             except KeyError:
                 self.reminderDict[server] = {}
-            # print(reminder)
-            print(server)
             self.reminderDict[server][title] = reminder
             await self._updateReminders()
 
