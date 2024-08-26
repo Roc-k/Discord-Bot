@@ -9,7 +9,7 @@ bot = discord.Bot()
 # Intilaize Reminders Module
 reminders = reminderCog(bot)
 bot.add_cog(reminders)
-reminders.connect_reminders(bot)
+# reminders.connect_reminders(bot)
 
 # Get the Servers we care about from the data loader
 servers = reminders.data_loader.servers

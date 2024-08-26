@@ -42,10 +42,10 @@ class ReminderDataLoader():
         update = False
         for i in self.servers:
             if str(i) not in self.serverDict:
-                self.serverDict[str(i)] = Server(str(i))
+                self.serverDict[str(i)] = Server(str(i)).toDict()
                 update = True
         if(update):
-            asyncio.run(self._updateServers())
+            asyncio.get_event_loop().run_until_complete(self._updateServers())
 
 
     

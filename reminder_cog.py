@@ -20,6 +20,7 @@ class reminderCog(commands.Cog):
         '''
         self.bot = bot
         self.data_loader = ReminderDataLoader()
+        self.connect_reminders(bot)
         self.printer.start()    
         
 
